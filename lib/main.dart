@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart'; 
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(MyApp());
@@ -109,7 +109,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                         decoration: InputDecoration(
                           hintText: "790 465 2919",
                           filled: true,
-                          fillColor: Colors.white, 
+                          fillColor: Colors.white,
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(8),
                             borderSide: BorderSide.none,
@@ -153,7 +153,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                             border: Border.all(
                               color: Colors.red,
                               width: 1.0,
-                              style: BorderStyle.solid, 
+                              style: BorderStyle.solid,
                             ),
                           ),
                           child: const Text(
@@ -211,9 +211,8 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                 ),
               ),
             ),
-              const Spacer(),
+            const Spacer(),
 
-            const SizedBox(height: 100),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
@@ -228,6 +227,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                 ),
               ),
             ),
+            const SizedBox(height: 30),
           ],
         ),
       ),
@@ -238,7 +238,9 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
 class _PhoneNumberFormatter extends TextInputFormatter {
   @override
   TextEditingValue formatEditUpdate(
-      TextEditingValue oldValue, TextEditingValue newValue) {
+    TextEditingValue oldValue,
+    TextEditingValue newValue,
+  ) {
     String digits = newValue.text.replaceAll(" ", "");
     String newText = '';
     for (int i = 0; i < digits.length; i++) {
