@@ -12,12 +12,13 @@ class VerifyOtpPage extends StatelessWidget {
         textAlign: TextAlign.center,
         keyboardType: TextInputType.number,
         maxLength: 1,
+
         decoration: InputDecoration(
           counterText: "",
           hintText: "0",
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8),
-          ),
+          fillColor: const Color.fromARGB(255, 236, 232, 232),
+          filled: true,
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),
             borderSide: const BorderSide(color: Colors.blue, width: 2),
@@ -53,51 +54,62 @@ class VerifyOtpPage extends StatelessWidget {
         ],
       ),
 
-     body: Padding(
-  padding: const EdgeInsets.only(top: 40, left: 20, right: 20),
-  child: Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: [
-      const Text(
-        "Enter the OTP sent to your phone",
-        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-      ),
-      const SizedBox(height: 30),
-
-      
-      Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          for (int i = 0; i < 3; i++) _otpBox(),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 6),
-            child: Text("-", style: TextStyle(fontSize: 20)),
-          ),
-          for (int i = 0; i < 3; i++) _otpBox(),
-        ],
-      ),
-
-      const SizedBox(height: 20),
-
-
-      Center(
-        child: TextButton(
-          onPressed: () {
-        
-          },
-          child: const Text(
-            "Didn't receive any code? Resend code",
-            style: TextStyle(
-              color: Color.fromARGB(255, 208, 210, 211), 
-              fontSize: 14,
+      body: Padding(
+        padding: const EdgeInsets.only(top: 40, left: 20, right: 20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              "Enter the OTP sent to your phone",
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
             ),
+            const SizedBox(height: 30),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                for (int i = 0; i < 3; i++) _otpBox(),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 6),
+                  child: Text("-", style: TextStyle(fontSize: 20)),
+                ),
+                for (int i = 0; i < 3; i++) _otpBox(),
+              ],
+            ),
+
+            const SizedBox(height: 20),
+
+            SizedBox(
+  width: double.infinity,
+  height: 50,
+  child: TextButton(
+    onPressed: () {},
+    style: TextButton.styleFrom(
+      backgroundColor: const Color.fromARGB(255, 249, 251, 251),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20),
+      ),
+    ),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.center, 
+      children: const [
+        Icon(Icons.access_time, size: 16, color: Color.fromARGB(255, 129, 129, 130)), 
+        SizedBox(width: 6),
+        Text(
+          "Didn't receive any code? Resend code",
+          style: TextStyle(
+            color: Color.fromARGB(255, 129, 129, 130),
+            fontSize: 14,
           ),
         ),
-      ),
-    ],
+      ],
+    ),
   ),
-),
+)
 
+          ],
+        ),
+      ),
 
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(20),
@@ -114,9 +126,7 @@ class VerifyOtpPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                   ),
                 ),
-                onPressed: () {
-        
-                },
+                onPressed: () {},
                 child: const Text(
                   "Verify code",
                   style: TextStyle(
