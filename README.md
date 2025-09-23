@@ -5,4 +5,4 @@
 ![Login Screen 3](assets/ScreenShot3.png)
 
 ## Verify otp 
-![verfiy_otp Screen 1](assets/verfiy_otp/verfiy_tp.png)
+![verfiy_otp Screen 1](assets/verfiy_otp/verfiy_otp.png)
