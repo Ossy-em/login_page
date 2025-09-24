@@ -1,8 +1,8 @@
 ## Login Screenshots
 
-![Login Screen1](assets/ScreenShot_1.png)
-![Login Screen2](assets/ScreenShot_2.png)
-![Login Screen3](assets/ScreenShot_3.png)
+![Login Screen1](assets/ScreenShot1.png)
+![Login Screen2](assets/ScreenShot2.png)
+![Login Screen3](assets/ScreenShot3.png)
 ![verfiy otp Screen 1](assets/verify_otp/verifyotp.png)
 
 ## Verify otp 
