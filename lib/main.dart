@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'screens/verify_otp.dart';
+
+import 'package:login_page/screens/verify_otp.dart';
+// import 'screens/verify_otp.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -13,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: VerifyOtpPage(),
+      home:CreateAccountPage(),
     );
   }
 }
