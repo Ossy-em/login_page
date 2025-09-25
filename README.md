@@ -5,5 +5,8 @@
 ![Login Screen3](assets/ScreenShot3.png)
 ![verfiy otp Screen 1](assets/verify_otp/verifyotp.png)
 
-## Verify otp 
-![verfiy_otp Screen 1](assets/verfiy_otp/verfiy otp.png)
+#
+
+## About you
+![About Screen 1](assets/about_you/AboutYou1.png)
+![About Screen 1](assets/about_you/AboutYou.png)

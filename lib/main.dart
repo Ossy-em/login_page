@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import 'package:login_page/screens/verify_otp.dart';
+import 'package:login_page/screens/about_you.dart';
 // import 'screens/verify_otp.dart';
 
 
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:CreateAccountPage(),
+      home:AboutYouPage(),
     );
   }
 }
